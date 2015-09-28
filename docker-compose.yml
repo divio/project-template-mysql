@@ -1,0 +1,16 @@
+web:
+ build: .
+ links:
+  - "db:postgres"
+ ports:
+  - "80"
+ volumes:
+  - ".:/app"
+  - "./.addons-dev.pth:/virtualenv/lib/python2.7/site-packages/aldryn-addons.pth"
+ environment:
+  DATABASE_URL: postgres://postgres@postgres:5432/db
+
+db:
+ image: postgres:9.4
+ volumes:
+  - ".:/app"
