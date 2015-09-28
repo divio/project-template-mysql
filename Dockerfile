@@ -6,8 +6,9 @@ FROM aldryn/base-project:3.0.0-beta.3
 
 # python requirements
 # -------------------
-COPY requirements.txt /app/
-RUN pip install -r requirements.txt
+COPY requirements.in /app/
+COPY addons-dev /app/addons-dev/
+RUN pip-compile -v && pip install -r requirements.txt
 
 # add full sourcecode and collectstatic
 # -------------------------------------
