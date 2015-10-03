@@ -3,11 +3,11 @@ web:
  links:
   - "db:postgres"
  ports:
-  - "80"
+  - "8000:80"
  volumes:
   - ".:/app"
- environment:
-  DATABASE_URL: postgres://postgres@postgres:5432/db
+ command: python manage.py runserver 0.0.0.0:80
+ env_file: .env
 
 db:
  image: postgres:9.4
