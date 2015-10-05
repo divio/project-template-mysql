@@ -5,3 +5,4 @@
 /static_collected
 /node_modules
 .env
+.aldryn
