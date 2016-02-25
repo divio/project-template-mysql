@@ -14,7 +14,7 @@ aldryn_addons.settings.load(locals())
 # all django settings can be altered here
 
 INSTALLED_APPS.extend([
-    # add you project specific apps here
+    # add your project specific apps here
 ])
 
 TEMPLATE_CONTEXT_PROCESSORS.extend([
