@@ -17,10 +17,6 @@ INSTALLED_APPS.extend([
     # add your project specific apps here
 ])
 
-TEMPLATE_CONTEXT_PROCESSORS.extend([
-    # add your template context processors here
-])
-
 MIDDLEWARE_CLASSES.extend([
     # add your own middlewares here
 ])
