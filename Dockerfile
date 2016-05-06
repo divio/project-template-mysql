@@ -13,7 +13,7 @@ RUN pip-compile -v && pip install -r requirements.txt
 # add full sourcecode and collectstatic
 # -------------------------------------
 COPY . /app
-RUN DJANGO_MODE=build python manage.py collectstatic --noinput --link
+RUN DJANGO_MODE=build python manage.py collectstatic --noinput
 
 # </DOCKER_BUILD>
 
