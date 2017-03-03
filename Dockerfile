@@ -1,19 +1,23 @@
-# <DOCKER_FROM>  # Warning: text inside the DOCKER_FROM tags is auto-generated. Manual changes will be overwritten.
-FROM aldryn/base-project:latest
+# <WARNING>
+# </WARNING>
+
+# <DOCKER_FROM>
 # </DOCKER_FROM>
 
-# <DOCKER_BUILD>  # Warning: text inside the DOCKER_BUILD tags is auto-generated. Manual changes will be overwritten.
+# <NPM>
+# </NPM>
 
-# python requirements
-# -------------------
-COPY requirements.in /app/
-COPY addons-dev /app/addons-dev/
-RUN pip-compile -v && pip install -r requirements.txt
+# <BOWER>
+# </BOWER>
 
-# add full sourcecode and collectstatic
-# -------------------------------------
-COPY . /app
-RUN DJANGO_MODE=build python manage.py collectstatic --noinput
+# <PYTHON>
+# </PYTHON>
 
-# </DOCKER_BUILD>
+# <SOURCE>
+# </SOURCE>
 
+# <GULP>
+# </GULP>
+
+# <STATIC>
+# </STATIC>
