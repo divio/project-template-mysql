@@ -11,6 +11,6 @@ web:
  env_file: .env-local
 
 db:
- image: postgres:9.6
+ image: postgres:9.6-alpine
  volumes:
   - ".:/app:rw"
