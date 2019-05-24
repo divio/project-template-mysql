@@ -47,4 +47,4 @@ INSTALLED_APPS.extend([
 ])
 
 # To see all the settings that have been applied in this project have a look
-# our support article: 
+# our support article: https://divio.com/docs/settings
