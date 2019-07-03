@@ -45,5 +45,6 @@ INSTALLED_APPS.extend([
     # Extend the INSTALLED_APPS setting by listing additional applications here
 ])
 
-# To see all the settings that have been applied in this project have a look
-# our support article: https://divio.com/docs/settings
+# To see the settings that have been applied, use the Django diffsettings 
+# management command. 
+# See https://docs.divio.com/en/latest/how-to/configure-settings.html#list
