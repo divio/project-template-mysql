@@ -39,3 +39,10 @@ services:
       SERVICE_MANAGER: "fsm-mysql"
     volumes:
       - ".:/app:rw"
+      - "./data/db:/var/lib/mysql"
+    healthcheck:
+        test: "/usr/bin/mysql --user=root -h 127.0.0.1 --execute \"SHOW DATABASES;\""
+        interval: 2s
+        timeout: 20s
+        retries: 10
+
